@@ -50,3 +50,33 @@ $("button").on("mouseenter", function() {
 $("button").on("mouseleave", function () {
     $(this).css("font-weight", "normal");
 });
+
+
+//$("#fade").on("click", function () {
+//    $("div").fadeOut(1000, function () {
+//        console.log("Fade Completed");
+//    });
+//});
+
+//$("#fade").on("click", function () {
+//    $("div").fadeOut(1000, function () {
+//        $(this).remove();
+//    });
+//});
+
+//$("#fade").on("click", function () {
+//    $("div").fadeToggle(500);
+//});
+
+//needs css to display:none
+//$("#fade").on("click", function () {
+//    $("div").slideDown();
+//});
+
+//$("#fade").on("click", function () {
+//    $("div").slideUp();
+//});
+
+$("#fade").on("click", function () {
+    $("div").slideToggle();
+});

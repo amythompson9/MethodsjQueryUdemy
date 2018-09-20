@@ -4,6 +4,17 @@
     <meta charset="utf-8" />
     <title>jQuery Methods and Events</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style type="text/css">
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            float: left;
+            margin: 20px;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Objectives
@@ -66,12 +77,11 @@
     $("button").on("click", function() {
         console.log("button clicked!");
     });
-        
+
     double click - "dblclick"
     drag start event - "dragstart"
     keypress event - "keypress"
         -->
-
     <!--WHY USE ON()?
 
     in most cases click() and on("click") will both get
@@ -81,6 +91,13 @@
 
     click() only adds listeners for existing elements
     on() will add listeners for all potential future elements-->
+    <!--EFFECTS-->
+    <!--.fadeout() fadeIn and fadeToggle-->
+
+    <button id="fade">Click Me!</button>
+    <div>Please don't fade me</div>
+    <div>I'm begging you</div>
+    <div>Help help help!</div>
 
     <script src="JavaScript.js"></script>
 </body>

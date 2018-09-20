@@ -52,7 +52,35 @@
     <input type="text" />
 
     <!--on() - use 99% of the time-->
+    <!--works like addEventListener
+    lets you specify the type of event to listen for
+    not just for click events
+    supports all types of events
 
+    prints when item with id 'submit' is clicked
+    $("#submit").on("click", function(){
+        console.log("Another click");
+    });
+
+    alerts when ANY button is clicked
+    $("button").on("click", function() {
+        console.log("button clicked!");
+    });
+        
+    double click - "dblclick"
+    drag start event - "dragstart"
+    keypress event - "keypress"
+        -->
+
+    <!--WHY USE ON()?
+
+    in most cases click() and on("click") will both get
+    the job done
+    however
+    there is one key difference
+
+    click() only adds listeners for existing elements
+    on() will add listeners for all potential future elements-->
 
     <script src="JavaScript.js"></script>
 </body>

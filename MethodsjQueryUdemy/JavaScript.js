@@ -26,3 +26,27 @@ $("input").keypress(function (event) {
 //'which' will be the code of the key that is pressed
 //enter is 13
 
+//$("h1").on("click", function () {
+//    $("h1").css("color", "purple");
+//});
+
+//the above is for a single instance of h1
+
+//what if you have multiples?
+//use this 
+
+$("h1").on("click", function () {
+    $(this).css("color", "purple");
+});
+
+$("input").on("keypress", function () {
+    console.log("keypressed!");
+});
+
+$("button").on("mouseenter", function() {
+    $(this).css("font-weight", "bold");
+});
+
+$("button").on("mouseleave", function () {
+    $(this).css("font-weight", "normal");
+});
